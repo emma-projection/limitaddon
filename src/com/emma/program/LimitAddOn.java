@@ -627,7 +627,7 @@ public final class LimitAddOn extends javax.swing.JFrame {
         lblTitleHeader = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Limit Transaction (Demo Version)");
+        setTitle("Limit Transaction v1.0.0");
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setForeground(new java.awt.Color(153, 255, 255));
         setResizable(false);

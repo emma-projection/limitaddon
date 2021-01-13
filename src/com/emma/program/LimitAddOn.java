@@ -212,7 +212,7 @@ public final class LimitAddOn extends javax.swing.JFrame {
 
     private void configComponent() throws Exception {
         txtSearchFilter.requestFocus();
-        jScrollPane1.setVisible(false);
+        scpErrorMessage.setVisible(false);
         lblSearchByFilter.setVisible(false);
         cmbSearchByFilter.setVisible(false);
         lblErrorMessage.setVisible(false);
@@ -610,7 +610,7 @@ public final class LimitAddOn extends javax.swing.JFrame {
         cmbProduk = new javax.swing.JComboBox<>();
         cmbTransactionPeriod = new javax.swing.JComboBox<>();
         lblCount = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
+        scpErrorMessage = new javax.swing.JScrollPane();
         txaErrorMessage = new javax.swing.JTextArea();
         btnClearData = new javax.swing.JButton();
         btnGenerate = new javax.swing.JButton();
@@ -874,10 +874,10 @@ public final class LimitAddOn extends javax.swing.JFrame {
         txaErrorMessage.setColumns(20);
         txaErrorMessage.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         txaErrorMessage.setRows(5);
-        jScrollPane1.setViewportView(txaErrorMessage);
+        scpErrorMessage.setViewportView(txaErrorMessage);
 
-        pnlAddLimitList.add(jScrollPane1);
-        jScrollPane1.setBounds(170, 230, 240, 81);
+        pnlAddLimitList.add(scpErrorMessage);
+        scpErrorMessage.setBounds(170, 230, 240, 81);
 
         btnClearData.setText("Clear Data");
         btnClearData.setBackground(new java.awt.Color(0, 0, 255));
@@ -1283,7 +1283,6 @@ public final class LimitAddOn extends javax.swing.JFrame {
     private com.github.lgooddatepicker.components.DatePicker dtpEndDateEvent;
     private com.github.lgooddatepicker.components.DatePicker dtpStartDateEvent;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JLabel lblByGroup;
     private javax.swing.JLabel lblByReseller;
@@ -1300,6 +1299,7 @@ public final class LimitAddOn extends javax.swing.JFrame {
     private javax.swing.JLabel lblTransactionPeriod;
     private javax.swing.JPanel pnlAddLimitList;
     private javax.swing.JPanel pnlMonitoring;
+    private javax.swing.JScrollPane scpErrorMessage;
     private javax.swing.JTabbedPane tbdProgram;
     private javax.swing.JTable tblEmmaLimitTransaction;
     private javax.swing.JTextArea txaErrorMessage;
